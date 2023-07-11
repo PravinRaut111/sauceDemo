@@ -1,0 +1,36 @@
+package soucedemo.POMClasses;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+   public class A6_Backhome_POM 
+  {
+
+	private WebDriver driver ;
+	
+	@FindBy(xpath ="//button [@id='back-to-products']']")private WebElement gotohome;
+	
+	
+
+	public void backhomepage()
+	{
+		gotohome.click();
+		System.out.println("go to the homepage");
+	}
+	
+	
+	public A6_Backhome_POM (WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this);	
+	
+	}	
+	
+	
+	
+	
+	
+	
+ }

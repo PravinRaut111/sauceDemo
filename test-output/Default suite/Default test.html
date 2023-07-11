@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jul 01 14:28:54 GMT+05:30 2023</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2442 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testF()'><b>testF</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method soucedemo.TestClasses.Practice.testF() didn&apos;t finish within the time-out 2000
+	at java.base@18/java.lang.Thread.sleep(Native Method)
+	at app//soucedemo.TestClasses.Practice.testF(Practice.java:68)
+	at java.base@18/java.lang.invoke.LambdaForm$DMH/0x0000000800d15c00.invokeVirtual(LambdaForm$DMH)
+	at java.base@18/java.lang.invoke.LambdaForm$MH/0x0000000800d18400.invoke(LambdaForm$MH)
+	at java.base@18/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+	at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18/java.lang.reflect.Method.invoke(Method.java:577)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base@18/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@18/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1787079037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1787079037'><pre>org.testng.internal.thread.ThreadTimeoutException: Method soucedemo.TestClasses.Practice.testF() didn&apos;t finish within the time-out 2000
+	at java.base@18/java.lang.Thread.sleep(Native Method)
+	at app//soucedemo.TestClasses.Practice.testF(Practice.java:68)
+	at java.base@18/java.lang.invoke.LambdaForm$DMH/0x0000000800d15c00.invokeVirtual(LambdaForm$DMH)
+	at java.base@18/java.lang.invoke.LambdaForm$MH/0x0000000800d18400.invoke(LambdaForm$MH)
+	at java.base@18/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+	at java.base@18/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18/java.lang.reflect.Method.invoke(Method.java:577)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base@18/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@18/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@18/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@18/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testA()'><b>testA</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testA()'><b>testA</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.productAddToCart()'><b>productAddToCart</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testA()'><b>testA</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.loginTest()'><b>loginTest</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testB()'><b>testB</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.Atest()'><b>Atest</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testD()'><b>testD</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.Ctest()'><b>Ctest</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.Btest()'><b>Btest</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.Dtest()'><b>Dtest</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+<tr>
+<td title='soucedemo.TestClasses.Practice.testE()'><b>testE</b><br>Test class: soucedemo.TestClasses.Practice</td>
+<td></td>
+<td>0</td>
+<td>soucedemo.TestClasses.Practice@7c7a06ec</td></tr>
+</table><p>
+</body>
+</html>
